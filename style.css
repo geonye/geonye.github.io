@@ -1,0 +1,146 @@
+html {
+  font-size: 62.5%; /* 1rem=10px */
+}
+
+body {
+  font-size: 1.6rem; /* 16px */
+  background-color: darkgrey;
+  color: white;
+}
+
+input {
+  border: none;
+  background: transparent;
+  text-align: center;
+  color: #ecf0f1;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+input::placeholder {
+  color: #ecf0f1;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+li:before {
+  content: "📁";
+  display: inline;
+  vertical-align: left;
+  padding: 5px;
+}
+
+.temp {
+  font-style: italic;
+  font-weight: bolder;
+  position: absolute;
+  top: 5vh;
+  right: 2vw;
+}
+
+.place {
+  font-style: italic;
+  font-weight: initial;
+  top: 5vh;
+  position: absolute;
+  top: 9vh;
+  right: 2vw;
+}
+
+.bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  animation: fadeIn 0.2s linear;
+}
+
+#bgImage {
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#clock {
+  position: fixed;
+  font-size: 10vh;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#login-form,
+#greeting {
+  text-align: center;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#login-form input {
+  font-size: 2rem;
+}
+
+#todo-form {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#todo-form input {
+  font-size: 1.5rem;
+}
+
+#todo-list {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#quote {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  font-size: 2.5vh;
+}
+
+#quote span {
+  background-color: black;
+  opacity: 0.65;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
